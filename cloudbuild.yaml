@@ -1,2 +1,5 @@
-runtime: nodejs16
-service: api
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'gcr.io/tcc-2-b-123200073/node:14-alpine', '.']
+images:
+- 'gcr.io/tcc-2-b-123200073/node:14-alpine'
